@@ -128,7 +128,7 @@ const spa_notas_axios = `
 `
 
 const getIndexHTML = (cantidad) => {
-  return(`
+  return (`
 <!DOCTYPE html>
     <html>
       <head>
@@ -145,18 +145,21 @@ const getIndexHTML = (cantidad) => {
       </body> 
     </html>
 `)
-} 
+}
 
 const router = express.Router();
 
 router.use(express.static(path.join(__dirname, 'public')))
 
+//partev del servidor de node, routeo con expres que depende la ruta. switch ruta respuesta
+//calback request y respuesta (texto)
 router.get('/', (req, res) => {
   const page = getIndexHTML(notas.length)
   res.send(page)
-  
+
 })
 
+//para cada ruta es una respiesta distinta
 router.get('/reset', (req, res) => {
   notas.splice(0, notas.length)
   res.status(201).send({ message: 'reset notas' })
@@ -166,14 +169,15 @@ router.get('/notas', (req, res) => {
   res.send(pagina_notas)
 })
 
+//single page aplicator
 router.get('/spa', (req, res) => {
   res.send(spa_notas)
 })
-
+//parecido pero asincronico para el callback hell
 router.get('/spa_fetch', (req, res) => {
   res.send(spa_notas_fetch)
 })
-
+//mas limpio, 
 router.get('/spa_axios', (req, res) => {
   res.send(spa_notas_axios)
 })
@@ -192,10 +196,10 @@ router.post('/nueva_nota_spa', (req, res) => {
   res.status(201).send({ message: 'Nota creada con exito!' })
 })
 
-router.post('/nueva_nota', (req, res) => {  
+router.post('/nueva_nota', (req, res) => {
   notas.push({
-      contenido: req.body.nota,
-      fecha: new Date()  
+    contenido: req.body.nota,
+    fecha: new Date()
   })
   res.redirect('/notas')
 })

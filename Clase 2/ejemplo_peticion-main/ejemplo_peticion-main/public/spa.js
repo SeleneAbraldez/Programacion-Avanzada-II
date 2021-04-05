@@ -1,5 +1,6 @@
 let notas = [];
 
+//el array ahora lo tengo en memoria
 let actualizarNotas = function () {
   let ul = document.createElement("ul");
   ul.setAttribute("class", "notas");
@@ -11,6 +12,8 @@ let actualizarNotas = function () {
   });
 
   let $notas = document.getElementById("notas");
+  //para limpiar esta es la buena practica
+  //signo pesos es que va a estar en una interfaz grafica, referencia
   if ($notas.hasChildNodes()) {
     $notas.removeChild($notas.childNodes[0]);
   }
@@ -42,6 +45,8 @@ let altaNota = function (nota) {
   xhrPost.send(JSON.stringify(nota));
 };
 
+//cuando haya terminaod de cargar la pagina, pisar el recargar e instanciamos la nota con agregarla, limpio/reseteo y actualizo
+//SIN RECARGAR! lo hagp en el cliete
 window.onload = function (e) {
   let form = document.getElementById("frm_notas");
   form.onsubmit = function (e) {

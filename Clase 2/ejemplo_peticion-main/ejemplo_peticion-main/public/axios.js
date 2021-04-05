@@ -1,5 +1,7 @@
 let notas = [];
 
+//intectado en el indez, podria estar en servidor peore sta de cliente igual
+
 let actualizarNotas = function () {
   let ul = document.createElement("ul");
   ul.setAttribute("class", "notas");
@@ -17,6 +19,7 @@ let actualizarNotas = function () {
   $notas.appendChild(ul);
 };
 
+//no el aclara nada y ya est parseado, ya no manejamos nosotros el error si no que lo trabaja axios
 const traerNotas = async () => {
   try {
     let res = await axios.get("/data.json");   
@@ -28,6 +31,7 @@ const traerNotas = async () => {
   }
 };
 
+//data, sin stringifym trabaja solo, sale con fritas
 const altaNota = async (nota) => {
   try {
     console.log(nota);
