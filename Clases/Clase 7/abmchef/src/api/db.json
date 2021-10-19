@@ -1,0 +1,8 @@
+{
+  "chef": [
+    { "id": 1, "nombre": "German", "especialidad": "Vegetales" },
+    { "id": 2, "nombre": "Laura", "especialidad": "Milanesas" },
+    { "id": 3, "nombre": "Damian", "especialidad": "Hamburgesas" },
+    { "id": 4, "nombre": "Maura", "especialidad": "Tacos" }
+  ]
+}

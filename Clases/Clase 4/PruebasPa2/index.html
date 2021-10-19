@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // const persona = {
+        //     nombre: "Juan",
+        //     edad: 30,
+        //     saludar: function () {
+        //         console.log("Hola");
+        //     }
+        // }
+
+        // // let nombre = persona.nombre;
+        // // let edad = persona.edad;
+        // // const saludar = persona.saludar;
+
+        // //DESESTRUCTURAMOS, unica linea
+        // //capturamos, las variables se tienen que llamar igual que las key del objeto,
+        // //si usamos alguna otra variable no va a inicializarse porque no lo encuentra
+        // //puede llamar en distinto orden ni utilizar todos
+        // let { nombre, edad, saludar } = persona;
+
+        // console.log(nombre, edad);
+        // saludar();
+
+        //tambien se puede realizar con un array
+        const arr = [2,3,5,7,8,9,19,11,12,34];
+        const arr2 = [1,1,1,1];
+        const arr3 = arr.concat(arr2);
+        //=
+        const arr4 = [...arr, ...arr2];
+        // let x = arr[0];
+        // let y = arr[1];
+        // let z = arr[2];
+        // let w = arr[3];
+        //DESESTRUCTIRAMOS
+        //este si necesita orden, pero no necesita llamar a
+        // let [x, y, z, w] = arr;
+        let [x, y, z, w,...g] = arr;
+        //todo lo que quede luego de w, entrata como array en g
+        // console.log(x, y, z, w, g);
+        console.log(arr3);
+        console.log(arr4);
+
+        // function sumar (a, b){
+        //     return a+b;
+        // }
+
+        // console.log(sumar(5,4, 6,5,8));
+        //como no podemos recibir mas de los delimitados, podemos tranformarlo en desestructurado
+        function sumar (a, ...b){
+            let suma = a;
+            b.forEach(valor=> suma += valor);
+            return suma;
+        }
+        //28 :)
+        console.log(sumar(5,4, 6,5,8));
+        console.log(sumar(5));
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //Sincronico
+        // function sumar(a, b) {
+        //     let suma = a + b;
+        //     console.log("La suma es " + suma);
+        //     return suma;
+
+        // }
+
+        // function cuadrado(a) {
+        //     let cuad = a * a;
+        //     console.log("El cuadrado es " + cuad);
+        //     return cuad;
+        // }
+
+        // function producto(a, b) {
+        //     let prod = a * b;
+        //     console.log("El prudcto es " + prod);
+        //     return prod;
+        // }
+
+        // function mostrar(value){
+        //     console.log("El resultado final es " + value);
+        // }
+
+        // let suma = sumar(4, 3); 
+        // let cuad = cuadrado(suma);
+        // let prod = producto(cuad, 10);
+
+        // mostrar(prod);
+
+        //Asincronico
+        //usando esta forma, no funcionaria ya que no tendriamos la suma definida al momento de mostrar, porque todavia no
+        //llego la informacion del servidor
+        //undefined
+        // function sumarAsinc(a, b) {
+        //     let suma;
+        //     //como claramente no tenemos un servidor ahora mismo, simulamos con un settimeour
+        //     setTimeout(() => {
+        //         a + b;
+        //     }, 2000);
+        //     console.log("La suma es " + suma);
+        //     return suma;
+        // }
+
+        //lo que se puede hacer es usarla para forzala a llegar antes
+        // function sumarAsinc(a, b) {
+        //     let suma;
+        //     setTimeout(() => {
+        //         suma = a + b;
+        //         //aca!
+        //         console.log("Recibi la suma " + suma);
+        //     }, 2000);
+        //     return suma;
+        // }
+
+        //otra opcion es pasarle un callback
+        // function sumarAsinc(a, b, callback) {
+        //     let suma;
+        //     setTimeout(() => {
+        //         suma = a + b;
+        //         console.log("La suma es " + suma);
+        //         //la manera de resolver la asincronia, para que no lo bloqueo lo inyecto
+        //         //espera hasta que llegue el resultado y lo recibe               
+        //         callback(suma, productoAsinc);
+        //     }, 2000);
+        //     return suma;
+        // }
+
+        // function cuadradoAsinc(a, callback) {
+        //     let cuad;
+        //     setTimeout(() => {
+        //         cuad = a * a;
+        //         console.log("El caudrado es " + cuad);
+        //         callback(cuad, 10, mostrar);
+        //     }, 2000);
+        //     return cuad;
+        // }
+
+        // function productoAsinc(a, b, callback) {
+        //     let prod;
+        //     setTimeout(() => {
+        //         prod = a * b;
+        //         console.log("El prudcto es " + prod);
+        //         callback(prod);                
+        //     }, 4000);
+        //     return prod;
+        // }
+
+        // function mostrar(value) {
+        //     console.log("El resultado final es " + value);
+        // }
+
+        // console.log("Fin");
+
+        // //sumarAsinc(4, 3);
+        // sumarAsinc(4, 3, cuadradoAsinc);
+
+        //2:41:56
+        //ahora lo empezamos a hacer inyectado para simular el horror
+        // function sumarAsinc(a, b, callback) {
+        //     let suma;
+        //     setTimeout(() => {
+        //         suma = a + b;
+        //         console.log("La suma es " + suma);
+        //         //la manera de resolver la asincronia, para que no lo bloqueo lo inyecto
+        //         //espera hasta que llegue el resultado y lo recibe               
+        //         callback(suma, function productoAsinc(a, b, callback) {
+        //             let prod;
+        //             setTimeout(() => {
+        //                 prod = a * b;
+        //                 console.log("El prudcto es " + prod);
+        //                 callback(prod);
+        //             }, 1000);
+        //             return prod;
+        //         });
+        //     }, 1000);
+        //     return suma;
+        // }
+
+        // console.log("Fin");
+
+        // //sumarAsinc(4, 3);
+        // sumarAsinc(4, 3, function cuadradoAsinc(a, callback) {
+        //     let cuad;
+        //     setTimeout(() => {
+        //         cuad = a * a;
+        //         console.log("El caudrado es " + cuad);
+        //         callback(cuad, 10, function mostrar(value) {
+        //             console.log("El resultado final es " + value);
+        //         });
+        //     }, 1000);
+        //     return cuad;
+        // });
+
+        //para evitar que sea todo un asco, lo que hacemos es utilizar primesas
+        //las promesas Recibe un calback con dos metodos, resolve y reject.
+        //Dentro de ese callback sucede algo, si es todo existoso se lo tiramos a resolve, si no a rejact
+        // function sumarPromise(a, b) {
+        //     return new Promise((resolve, reject) => {
+        //         let suma;
+        //         setTimeout(() => {
+        //             //si hay algun error lo rejectamos
+        //             if (typeof a !== "number" || typeof b !== "number") {
+        //                 reject({ mensaje: "No es un numero" })
+        //             } else {
+        //                 //pero sie sta todo bien le àsamos todo bien :)
+        //                 suma = a + b;
+        //                 console.log("La suma es " + suma);
+        //                 resolve(suma)
+        //             }
+        //         }, 2000);
+        //     });
+        // }
+
+        // function cuadradoPromise(a) {
+        //     return new Promise((resolve, reject) => {
+        //         let caudrado;
+        //         setTimeout(() => {
+        //             if (typeof a !== "number") {
+        //                 reject({ mensaje: "No es un numero" })
+        //             } else {
+        //                 caudrado = a * a;
+        //                 console.log("El caudrado es " + caudrado);
+        //                 resolve(caudrado)
+        //             }
+        //         }, 2000);
+        //     });
+        // }
+
+        // function productoPromise(a, b) {
+        //     return new Promise((resolve, reject) => {
+        //         let producto;
+        //         setTimeout(() => {
+        //             if (typeof a !== "number" || typeof b !== "number") {
+        //                 reject({ mensaje: "No es un numero" })
+        //             } else {
+        //                 producto = a * b;
+        //                 console.log("El producto es " + producto);
+        //                 resolve(producto)
+        //             }
+        //         }, 2000);
+        //     });
+        // }
+
+        // function mostrar(value) {
+        //     console.log("El resultado final es " + value);
+        // }
+
+        // function realizarOperaciones(a, b) {
+        //     sumarPromise(a, b)
+        //         // .then((sumarPromise) => {
+        //         //     return cuadradoPromise(sumarPromise);
+        //         // })
+        //         .then(sumarPromise => cuadradoPromise(sumarPromise))
+        //         .then(cuadradoPromise => productoPromise(cuadradoPromise, 10))
+        //         .then(productoPromise => mostrar(productoPromise))
+        //         .catch(err => {
+        //             console.log("Error: " + err.mensaje)
+        //         });
+        // }
+
+        // realizarOperaciones(4, 3);
+
+        //como el ejemplo pasado es un promise hell y tampoco es mucho mejor que lo anteripor, le damos una vuelta de tuerca mas
+        //usando las funciones asincronos
+        function sumarPromise(a, b) {
+            return new Promise((resolve, reject) => {
+                let suma;
+                setTimeout(() => {
+                    //si hay algun error lo rejectamos
+                    if (typeof a !== "number" || typeof b !== "number") {
+                        reject({ mensaje: "No es un numero suma" })
+                    } else {
+                        //pero sie sta todo bien le àsamos todo bien :)
+                        suma = a + b;
+                        console.log("La suma es " + suma);
+                        resolve(suma)
+                    }
+                }, 2000);
+            });
+        }
+
+        function cuadradoPromise(a) {
+            return new Promise((resolve, reject) => {
+                let caudrado;
+                setTimeout(() => {
+                    if (typeof a !== "number") {
+                        reject({ mensaje: "No es un numero cuad" })
+                    } else {
+                        caudrado = a * a;
+                        console.log("El caudrado es " + caudrado);
+                        resolve(caudrado)
+                    }
+                }, 2000);
+            });
+        }
+
+        function productoPromise(a, b) {
+            return new Promise((resolve, reject) => {
+                let producto;
+                setTimeout(() => {
+                    if (typeof a !== "number" || typeof b !== "number") {
+                        reject({ mensaje: "No es un numero prod" })
+                    } else {
+                        producto = a * b;
+                        console.log("El producto es " + producto);
+                        resolve(producto)
+                    }
+                }, 2000);
+            });
+        }
+
+        function mostrar(value) {
+            console.log("El resultado final es " + value);
+        }
+
+        async function realizarOperaciones(a, b) {
+            try {
+                let suma = await sumarPromise(a, b);
+                let cuad = await cuadradoPromise(suma);
+                let prod = await productoPromise(cuad, 10);
+                mostrar(prod);
+
+
+                
+            } catch (error) {
+
+            }
+
+        }
+
+        console.log("Inicio");
+        realizarOperaciones(4, 3);
+        console.log("Fin");
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+@import-normalize;
+
+/* *,*::after,*::before{
+  margin: 0;
+  box-sizing: border-box;
+} */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+  border: 3px solid rgb(0, 0, 0);
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+header > img {
+  max-width: 100px;
+}
+
+h1 {
+  /* font-size: 4rem;
+  color: rgb(255, 204, 64); */
+}
+
+html {
+  background-color: rgb(196, 62, 0);
+  align-items: center;
+}
+
+.listado {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 7px;
+  background-color: rgb(43, 43, 43);
+  width: 70%;
+  margin: auto;
+  margin-top: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+.listadoaa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 7px;
+  border: 3px solid rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+  width: 65%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+table {
+  border: 1px solid black;
+  padding: 0.7em;
+  background-color: rgb(162, 206, 161);
+  width: 95%;
+}
+
+th {
+  padding: 0.5em;
+  background-color: rgb(69, 136, 102);
+  color: white;
+  border: 2px solid black;
+}
+
+td {
+  padding: 0.3em;
+}
+
+button {
+  font-size: 1rem;
+}
+
+.contenedor-loader {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+button > img{
+  width: 30px;
+}
+
+.botones{
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+}

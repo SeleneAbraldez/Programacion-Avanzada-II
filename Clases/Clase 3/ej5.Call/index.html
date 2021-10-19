@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        const persona ={
+            nombre: "Juan",
+            edad: 30,
+            saludar: function(){
+                console.log("Hola me llamo " + this.nombre + " y tengo " + this.edad);
+            },
+            sumar: function(a, b){
+                return a+b;
+            }
+        }
+
+        // console.log(persona.sumar(5,4));
+        // const calcular = persona.sumar;
+        // console.log(calcular(5,4));
+        persona.saludar();
+        const saludo = persona.saludar;
+        //pierde lareferencia, por lo que debemos hacer un call y pasarle el contexto del mismo
+        // saludo();
+        saludo.call(persona);
+        //entre apply y call lo que cambia es que si trae parametros una funcion, una se pasa separada y la otra se 
+        //pasa como array
+
+        //tambien podriamos hacer un bind que ya lleva el contexto d epersona
+        // const saludo = persona.saludar.bind(persona);
+
+    </script>
+
+</body>
+
+</html>

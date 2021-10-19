@@ -1,0 +1,234 @@
+{
+  "tiradas": [
+    {
+      "id": 1,
+      "fecha": "5/26/2021, 5:01:14 PM",
+      "cartas": [
+        {
+          "id": 6,
+          "name": "the-hierophant",
+          "summary": "A spiritual mentor or teacher who inspires you and influences your own personal philosophy, belief system or spiritual journey. A desire to learn and gain understanding. Seeking out guidance and a spiritual code of conduct to live by; striving to be the best you can be.",
+          "full_meaning": "The Subject is thinking about their beliefs and how this affects their lives. In more conventional religions, the requirements and expectations in terms of behaviour are clear, and each has its own set of rules. If the Subject and their beliefs aren’t conventional, or part of an organised religion, they may be wondering what their spiritual “code of conduct” is.",
+          "upright": "tradition, conformity, morality, ethics",
+          "reversed": "rebellion, subversiveness, new approaches",
+          "image": "https://tarot-api.s3.amazonaws.com/images/major/6.jpg"
+        },
+        {
+          "id": 31,
+          "name": "nine-of-swords",
+          "summary": "The Nine of Swords shows personal suffering through fear, grief or guilt. Destructive tendencies come to the fore as you punish yourself for the choices you have made. The reality really isn’t as bad as you imagine. Adopt a more positive mind-set to move forward.",
+          "full_meaning": "The Nine of Swords crops up when the Subject’s mental attitude can improve, or worsen, a situation and it can illustrate self-destructive, depressive tendencies and thoughts. This card will indicate some issues that need to be dealt with but the situation is not quite as hopeless as the Subject feels.",
+          "upright": "anxiety, hopelessness, trauma",
+          "reversed": "hope, reaching out, despair",
+          "image": "https://tarot-api.s3.amazonaws.com/images/minor/swords/9.jpg"
+        },
+        {
+          "id": 56,
+          "name": "six-of-wands",
+          "summary": " The Six of Wands shows a significant achievement on your part. Success that is recognised and endorsed by others, even those that may have previously doubted you and your choices. A very happy, pleasing time for you. Well done!",
+          "full_meaning": "The achievements referred to here, in the Six of Wands, are more accomplished than those referred to in the Three. Not only has the Subject managed to succeed, they also know that they chose the right path and they are right where they want to be. The Subject should have boundless confidence in their abilities and a real sense of pride.",
+          "upright": "victory, success, public reward",
+          "reversed": "excess pride, lack of recognition, punishment",
+          "image": "https://tarot-api.s3.amazonaws.com/images/minor/wands/6.jpg"
+        }
+      ],
+      "interpretacion": "Mala semana, insomnio por estudio"
+    },
+    {
+      "id": 2,
+      "interpretacion": "Traicion desde arriba, cuidado",
+      "fecha": "5/26/2021, 5:28:12 PM",
+      "cartas": [
+        {
+          "id": 78,
+          "name": "king-of-pentacles",
+          "upright": "abundance, prosperity, security",
+          "reversed": "greed, indulgence, sensuality",
+          "image": "https://tarot-api.s3.amazonaws.com/images/minor/pentacles/14.jpg"
+        },
+        {
+          "id": 76,
+          "name": "knight-of-pentacles",
+          "upright": "efficiency, hard work, responsibility",
+          "reversed": "laziness, obsessiveness, work without reward",
+          "image": "https://tarot-api.s3.amazonaws.com/images/minor/pentacles/12.jpg"
+        },
+        {
+          "id": 24,
+          "name": "two-of-swords",
+          "upright": "difficult choices, indecision, stalemate",
+          "reversed": "lesser of two evils, no right choice, confusion",
+          "image": "https://tarot-api.s3.amazonaws.com/images/minor/swords/2.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "interpretacion": "Ilusiones falsas y despidos pronto",
+      "fecha": "5/26/2021, 5:33:11 PM",
+      "cartas": [
+        {
+          "id": 37,
+          "name": "ace-of-cups",
+          "upright": "new feelings, spirituality, intuition",
+          "reversed": "emotional loss, blocked creativity, emptiness",
+          "image": "https://tarot-api.s3.amazonaws.com/images/minor/cups/1.jpg"
+        },
+        {
+          "id": 24,
+          "name": "two-of-swords",
+          "upright": "difficult choices, indecision, stalemate",
+          "reversed": "lesser of two evils, no right choice, confusion",
+          "image": "https://tarot-api.s3.amazonaws.com/images/minor/swords/2.jpg"
+        },
+        {
+          "id": 50,
+          "name": "king-of-cups",
+          "upright": "compassion, control, balance",
+          "reversed": "coldness, moodiness, bad advice",
+          "image": "https://tarot-api.s3.amazonaws.com/images/minor/cups/14.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "interpretacion": "Busqueda interior, victorias futuras",
+      "fecha": "5/26/2021, 5:46:13 PM",
+      "cartas": [
+        {
+          "id": 65,
+          "name": "ace-of-pentacles",
+          "upright": "opportunity, prosperity, new venture",
+          "reversed": "lost opportunity, missed chance, bad investment",
+          "image": "https://tarot-api.s3.amazonaws.com/images/minor/pentacles/1.jpg"
+        },
+        {
+          "id": 13,
+          "name": "wheel-of-fortune",
+          "upright": "change, cycles, inevitable fate",
+          "reversed": "no control, clinging to control, bad luck",
+          "image": "https://tarot-api.s3.amazonaws.com/images/major/11.jpg"
+        },
+        {
+          "id": 12,
+          "name": "the-hermit",
+          "upright": "contemplation, search for truth, inner guidance",
+          "reversed": "loneliness, isolation, lost your way",
+          "image": "https://tarot-api.s3.amazonaws.com/images/major/10.jpg"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "interpretacion": "Viejas heridas abiertas luego de esperanzas",
+      "fecha": "5/26/2021, 5:49:27 PM",
+      "cartas": [
+        {
+          "id": 25,
+          "name": "three-of-swords",
+          "upright": "heartbreak, suffering, grief",
+          "reversed": "recovery, forgiveness, moving on",
+          "image": "https://tarot-api.s3.amazonaws.com/images/minor/swords/3.jpg"
+        },
+        {
+          "id": 69,
+          "name": "five-of-pentacles",
+          "upright": "need, poverty, insecurity",
+          "reversed": "recovery, charity, improvement",
+          "image": "https://tarot-api.s3.amazonaws.com/images/minor/pentacles/5.jpg"
+        },
+        {
+          "id": 24,
+          "name": "two-of-swords",
+          "upright": "difficult choices, indecision, stalemate",
+          "reversed": "lesser of two evils, no right choice, confusion",
+          "image": "https://tarot-api.s3.amazonaws.com/images/minor/swords/2.jpg"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "interpretacion": "Mujer que trae inteligencia y justicia",
+      "fecha": "5/26/2021, 6:01:54 PM",
+      "cartas": [
+        {
+          "id": 49,
+          "name": "queen-of-cups",
+          "upright": "compassion, calm, comfort",
+          "reversed": "martyrdom, insecurity, dependence",
+          "image": "https://tarot-api.s3.amazonaws.com/images/minor/cups/13.jpg"
+        },
+        {
+          "id": 19,
+          "name": "the-moon",
+          "upright": "unconscious, illusions, intuition",
+          "reversed": "confusion, fear, misinterpretation",
+          "image": "https://tarot-api.s3.amazonaws.com/images/major/19.jpg"
+        },
+        {
+          "id": 63,
+          "name": "queen-of-wands",
+          "upright": "courage, determination, joy",
+          "reversed": "selfishness, jealousy, insecurities",
+          "image": "https://tarot-api.s3.amazonaws.com/images/minor/wands/13.jpg"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "interpretacion": "Positivimismo",
+      "fecha": "5/26/2021, 6:07:01 PM",
+      "cartas": [
+        {
+          "id": 74,
+          "name": "ten-of-pentacles",
+          "upright": "legacy, culmination, inheritance",
+          "reversed": "fleeting success, lack of stability, lack of resources",
+          "image": "https://tarot-api.s3.amazonaws.com/images/minor/pentacles/10.jpg"
+        },
+        {
+          "id": 78,
+          "name": "king-of-pentacles",
+          "upright": "abundance, prosperity, security",
+          "reversed": "greed, indulgence, sensuality",
+          "image": "https://tarot-api.s3.amazonaws.com/images/minor/pentacles/14.jpg"
+        },
+        {
+          "id": 9,
+          "name": "justice",
+          "upright": "cause and effect, clarity, truth",
+          "reversed": "dishonesty, unaccountability, unfairness",
+          "image": "https://tarot-api.s3.amazonaws.com/images/major/12.jpg"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "interpretacion": "Canalizando puede salir todo bien",
+      "fecha": "5/26/2021, 6:12:32 PM",
+      "cartas": [
+        {
+          "id": 44,
+          "name": "eight-of-cups",
+          "upright": "walking away, disillusionment, leaving behind",
+          "reversed": "avoidance, fear of change, fear of loss",
+          "image": "https://tarot-api.s3.amazonaws.com/images/minor/cups/8.jpg"
+        },
+        {
+          "id": 20,
+          "name": "the-sun",
+          "upright": "joy, success, celebration, positivity",
+          "reversed": "negativity, depression, sadness",
+          "image": "https://tarot-api.s3.amazonaws.com/images/major/20.jpg"
+        },
+        {
+          "id": 74,
+          "name": "ten-of-pentacles",
+          "upright": "legacy, culmination, inheritance",
+          "reversed": "fleeting success, lack of stability, lack of resources",
+          "image": "https://tarot-api.s3.amazonaws.com/images/minor/pentacles/10.jpg"
+        }
+      ]
+    }
+  ]
+}
